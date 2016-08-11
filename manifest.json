@@ -1,0 +1,25 @@
+
+{
+  "name": "No Man's Spoilers",
+  "version": "1.0.1",
+  "description": "Hides no mans sky spoilers",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "jqueryUI.js",
+        "jquery-3.1.0.min.js", 
+        "contentscript.js"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ]
+}
